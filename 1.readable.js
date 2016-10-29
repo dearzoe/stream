@@ -2,6 +2,9 @@ var fs= require("fs");
 var rs = fs.createReadStream("./1.txt",{
     flags:'r',//打开文件之后想做什么
     encoding:null,//编码默认为null,得到是buffer对象
+    start:3,
+    end:5,
+    highWaterMark:2
 });
 
 /*
@@ -20,3 +23,8 @@ rs.on('end', function () {
 rs.on('error', function (err) {
     console.log("出错了",err)
 });
+
+
+
+//highWaterMark
+
