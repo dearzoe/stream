@@ -1,11 +1,10 @@
 var fs = require("fs");
 var ws = fs.createWriteStream("2.txt",{
    flags:"w",
-   start:1,
-   highWaterMark:3
+   start:1
 });
 var i=0;
-var max = 10;
+var max = 100000;
 function write(){
    console.log("继续写"+i);
    var flag=true;
