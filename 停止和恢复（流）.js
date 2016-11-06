@@ -12,7 +12,7 @@ rs.on("data", function (data) {
         rs.resume()
     },5000);
 });
-/*。。。*/
+/*。。*/
 rs.on("end", function () {
     console.log("读完了")
 });
